@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils.DotNetCore.ILogger.Extensions", "Utils.DotNetCore.ILogger.Extensions.csproj", "{26777CEC-4A3C-4964-BDAE-0D7B32513DBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26777CEC-4A3C-4964-BDAE-0D7B32513DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26777CEC-4A3C-4964-BDAE-0D7B32513DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26777CEC-4A3C-4964-BDAE-0D7B32513DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26777CEC-4A3C-4964-BDAE-0D7B32513DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F8CEFA2-304A-4742-AD6F-C1FF61A35131}
+	EndGlobalSection
+EndGlobal
