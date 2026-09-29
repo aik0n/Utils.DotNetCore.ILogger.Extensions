@@ -1,15 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Title>Utils.DotNetCore.ILogger.Extensions</Title>
     <Authors>a_i_k_0_n</Authors>
     <Description>A package with LogWithContext ILogger extensions. Can be used as a standalone package. Main purpose is to use internally as a service package.</Description>
-    <PackageIcon>robo_avatar_aik0n_02_128_128.png</PackageIcon>
+    <PackageIcon>robo_avatar_02_128_128.png</PackageIcon>
     <PackageTags>.NET Core;ILogger;Extensions</PackageTags>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Added net10.0 target</PackageReleaseNotes>
+    <Version>1.1.0</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/aik0n/Utils.DotNetCore.ILogger.Extensions</RepositoryUrl>
@@ -19,22 +20,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\_shared\robo_avatar_aik0n_02_128_128.png">
+    <None Include="..\_shared\robo_avatar_02_128_128.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.12" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="LICENSE.md">
+    <None Include="LICENSE.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Update="README.md">
+    <None Include="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
